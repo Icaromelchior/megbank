@@ -1,11 +1,11 @@
 import React from 'react';
-import { Container, Navbar, Nav,ButtonGroup, Button, NavDropdown} from 'react-bootstrap';
+import {Container, Navbar, Nav,ButtonGroup, Button, NavDropdown} from 'react-bootstrap';
 import './Navbar.scss';
 import logo from '../essets/logo.svg';
 
 const Navgation = () => (
   <Navbar variant= 'dark' expand="lg">
-    <Container>
+        <Container>
     <Navbar.Brand href="#">
       <img
           src={logo}
