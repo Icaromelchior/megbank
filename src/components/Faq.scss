@@ -1,0 +1,25 @@
+@import '../variables';
+
+
+.faq {
+  background-color: $color-faq-backgroud;
+  color: #FFF;
+  
+  
+}
+
+.faq__body{
+  background-color: $color-faq-header;
+}
+
+.faq-title {
+      font-size: 2.2rem;
+      font-weight: 300;
+      line-height: 1.2;
+      text-align: center;
+      padding-bottom: 5rem;
+  
+      @media screen and (min-width: 992px) {
+        font-size: 3.5rem;
+      }
+}
