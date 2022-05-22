@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import { Container, Row, Col, Accordion } from 'react-bootstrap';
 import IconText from './IconText';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -18,7 +18,17 @@ const Faq = () => {
     { icon: faShieldAlt, text: 'Token digital' },
     { icon: faUserTie, text: 'Produtos e Serviços' },
   ];
+  const [index,setIndex] = useState(0);
 
+  const handleClick = (key) => {
+    setIndex(key);
+  };
+
+  useEffect(()=> {
+    console.log(index);
+  },[index]);
+
+  return(
   <section className='faq'>
     <Container  className=' py-5'>
       <h2 className='faq-title  my-5 max-auto'>Dúvidas Frequentes</h2>
@@ -28,30 +38,34 @@ const Faq = () => {
         <Col className='d-lg-none mb-5' xs={12}>
 
           <Row>
-
-             {options.map((icon) => (
-
-             ))
-             }
-                
-          
-          </Row>
-
+              {options.map(({ icon },key) => (
+                <Col className='d-flex justify-content-center'ket={key}>
+                  <FontAwesomeIcon
+                    icon={icon} size='2x' color={key === index ? '#FFF': '#BBB'} onClick={()=> handleClick(key)}/>
+                </Col>
+              ))}
+            </Row>
+            <Row className='faq-cel mt-5'>
+              <p className='lead'>{options[index].text}</p>
+            </Row>   
         </Col>
 
-        <Col className='d-none d-lg-block mt-5'>
+        <Col className='d-none d-lg-block'>
+            {options.map(({ icon, text },key) => (
+              <IconText
+                icon={icon}
+                size={3}
+                className='faq-clicklabe mb-3'
+                textClassName='lead'
+                color= {key === index ? '#FFF': '#BBB'} onClick={()=> handleClick(key)} key={key}>
+                {text}
+              </IconText>
+            ))}
+          </Col>
 
-           {options.map(({ icon, text } => (
-               <IconText icon={faCreditCard} size={3} className='mb-3' 
-               textClassName='lead mt-2' color= '#fff'>
-                 {text}</IconText>
-           ))}
-           
-            
-        </Col>
 
         <Col>
-          <Accordion  defaultActiveKey="0">
+          <Accordion  defaultActiveKey='0' activeKey={`${index}`}>
                 <Accordion.Item  eventKey="0">
                   <Accordion.Header >Lorem ipsum dolor sit amet</Accordion.Header>
                   <Accordion.Body className='faq__body'>
@@ -105,6 +119,7 @@ const Faq = () => {
       </Row>
     </Container>
   </section>
+)
 };
 
 export default Faq;
