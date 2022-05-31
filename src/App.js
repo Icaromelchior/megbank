@@ -1,28 +1,31 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import CreditCard from './components/CreditCard';
-import CardList from './components/CardList';
-import CenteredButton from './components/CenteredButton';
-import Institutional from './components/Institutional';
-import Faq from './components/Faq'
+import { Routes, Route} from "react-router-dom";
 import Footer from './components/Footer'
 import './App.scss'
-import posts from './data/posts';
+import AccontModal from './components/AccontModal';
+import Home from './views/Home'
+import Login from './views/Login';
+import Dashbord  from './views/Dashbord';
 
-const App = () => (
+const App = () => {
+  const [showModal,setShowModal,] = useState(false);
+  return(
+    <>
+      <Navbar hendleCreateAcc= {() => setShowModal(true)}/>
 
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <CreditCard />
-      <CardList posts={posts} />
-      <CenteredButton>Abra sua conta</CenteredButton>
-      <Institutional />
-      <Faq />
+        <Routes>
+            <Route path="/" element={<Home handleClick={() => setShowModal(true)}/>} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/dashbord" element={<Dashbord />} />
+        </Routes>
+
       <Footer />
-    </div>
-);
+      <AccontModal show={showModal} handleClose={() => setShowModal(false)}/>
+    </>
+  );
+};
 
 
 export default App;
