@@ -7,7 +7,7 @@ import './App.scss'
 import AccontModal from './components/AccontModal';
 import Home from './views/Home'
 import Login from './views/Login';
-import Dashbord  from './views/Dashbord';
+import Dashboard  from './views/Dashboard';
 
 const App = () => {
   const [showModal,setShowModal,] = useState(false);
@@ -18,7 +18,7 @@ const App = () => {
         <Routes>
             <Route path="/" element={<Home handleClick={() => setShowModal(true)}/>} />
             <Route path="/login" element={<Login />} />
-            <Route path="/dashbord" element={<Dashbord />} />
+            <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
 
       <Footer />
