@@ -7,7 +7,7 @@ import logo from '../essets/logo.svg';
 const Navgation = ({ hendleCreateAcc }) => (
   <Navbar variant= 'dark' expand="lg">
         <Container>
-    <Navbar.Brand href="#">
+    <Navbar.Brand href="#home">
       <img
           src={logo}
           height="30"
