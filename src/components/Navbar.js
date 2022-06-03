@@ -7,14 +7,16 @@ import logo from '../essets/logo.svg';
 const Navgation = ({ hendleCreateAcc }) => (
   <Navbar variant= 'dark' expand="lg">
         <Container>
-    <Navbar.Brand href="#home">
-      <img
-          src={logo}
-          height="30"
-          className="d-inline-block align-top"
-          alt="Megbank logo"
-        />
-    </Navbar.Brand>
+    <Navbar.Brand>
+        <Link to='/'>
+          <img
+            src={logo}
+            height='30'
+            className='d-inline-block align-top'
+            alt='Magbank logo'
+          />
+        </Link>
+      </Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
       <Nav
