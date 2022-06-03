@@ -1,34 +1,47 @@
 @import '../variables';
 
-
 .faq {
-  background-color: $color-faq-backgroud;
-  color: #FFF;
-  
-  
+  background-color: $color-faq-background;
+  color: #fff;
+
+  .accordion-body {
+    background-color: $color-faq-background;
+  }
+
+  .accordion-button {
+    background-color: $color-faq-header;
+    color: #fff;
+
+    &:not(.collapsed) {
+      background-color: $color-faq-header;
+      color: #fff;
+    }
+  }
+
+  &-title {
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 1.2;
+
+    @media screen and (min-width: 992px) {
+      font-size: 3.5rem;
+    }
+  }
+
+  &-clickable {
+    cursor: pointer;
+  }
 }
 
-.faq__body{
-  background-color: $color-faq-header;
-}
-
-.faq-title {
-      font-size: 2.2rem;
-      font-weight: 300;
-      line-height: 1.2;
-      text-align: center;
-      padding-bottom: 5rem;
-  
-      @media screen and (min-width: 992px) {
-        font-size: 3.5rem;
-      }
-}
-
-.faq-clicklabe {
-  cursor: pointer;
-}
 
 .faq-cel{
   text-align: center;
 }
 
+.faq-title{
+  text-align: center;
+}
+
+.faq-clicklabe{
+  cursor: pointer;
+}
