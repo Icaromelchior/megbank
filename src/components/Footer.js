@@ -11,15 +11,15 @@ import './Footer.scss';
 const Footer = () =>(
 <footer className='footer'>
     <Container>
-      <Row className='text-center py-5'>
+      <Row Col xs={12} lg={6} className='text-lg-left mb-5 mb-lg-0'>
         <Col xs={12} lg={6} className='text-lg-left'>
-          <Image src={logo}/>
+          <Image src={logo} className="logo"/>
         </Col>
-        <Col xs={12} lg={4} className='py-xs-5'>
+        <Col xs={12} lg={4} className='mb-5 mb-lg-0'>
           <Image src={applestore} />
           <Image src={googleplay} className='ml-2'/>
         </Col>
-        <Col xs={12} lg={2} className='d-flex algin-items-center justify-content-center'>
+        <Col xs={12} lg={2} className='d-flex align-items-center justify-content-center'>
           <FaFacebookSquare color="#7c7c7c" size={'2.5rem'} />
           <FaTwitterSquare color="#7c7c7c" size={'2.5rem'} className='ml-2'/>
           <FaYoutubeSquare color="#7c7c7c" size={'2.5rem'} className='ml-2'/>

@@ -65,61 +65,72 @@ const Faq = () => {
 
 
         <Col>
-          <Accordion  defaultActiveKey='0' activeKey={`${index}`}>
-                <Accordion.Item  eventKey="0">
-                  <Accordion.Header >Lorem ipsum dolor sit amet</Accordion.Header>
-                  <Accordion.Body className='faq__body'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="1">
-                  <Accordion.Header>Exercitation ullamco </Accordion.Header>
-                  <Accordion.Body className='faq__body'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="2">
-                  <Accordion.Header>Duis aute irure dolor in, adipiscing</Accordion.Header>
-                  <Accordion.Body className='faq__body'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="3">
-                  <Accordion.Header>Consectetur adipiscing </Accordion.Header>
-                  <Accordion.Body className='faq__body'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.
-                  </Accordion.Body>
-                </Accordion.Item>
-          </Accordion>
-        </Col>
-      </Row>
-    </Container>
-  </section>
-)
+            <Accordion defaultActiveKey='0' activeKey={`${index}`}>
+              <Accordion.Item eventKey="0">
+                <Accordion.Header> Lorem ipsum dolor sit amet</Accordion.Header>
+                <Accordion.Body className="accordion--bg">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam tincidunt arcu vel arcu fermentum, eget accumsan
+                    dolor dignissim. Nam eget quam semper, varius ligula sed,
+                    auctor augue. Maecenas et porta magna. Nulla mattis tortor
+                    vitae metus vestibulum scelerisque. Ut mollis a nisl vel
+                    suscipit. Curabitur scelerisque placerat ultrices. Proin
+                    purus ante, congue vel arcu ac, porta condimentum mauris.
+                    Maecenas massa orci, fringilla eget fermentum nec, dignissim
+                    nec diam.
+                </Accordion.Body>
+              </Accordion.Item>
+
+              <Accordion.Item eventKey="1">
+                <Accordion.Header className="accordion--header">Nulla porttitor eros ac ex tristique posuere</Accordion.Header>
+                <Accordion.Body className="accordion--bg">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam tincidunt arcu vel arcu fermentum, eget accumsan
+                    dolor dignissim. Nam eget quam semper, varius ligula sed,
+                    auctor augue. Maecenas et porta magna. Nulla mattis tortor
+                    vitae metus vestibulum scelerisque. Ut mollis a nisl vel
+                    suscipit. Curabitur scelerisque placerat ultrices. Proin
+                    purus ante, congue vel arcu ac, porta condimentum mauris.
+                    Maecenas massa orci, fringilla eget fermentum nec, dignissim
+                    nec diam.
+                </Accordion.Body>
+              </Accordion.Item>
+
+              <Accordion.Item eventKey="2">
+                <Accordion.Header>Quisque fringilla tincidunt arcu</Accordion.Header>
+                <Accordion.Body className="accordion--bg">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam tincidunt arcu vel arcu fermentum, eget accumsan
+                    dolor dignissim. Nam eget quam semper, varius ligula sed,
+                    auctor augue. Maecenas et porta magna. Nulla mattis tortor
+                    vitae metus vestibulum scelerisque. Ut mollis a nisl vel
+                    suscipit. Curabitur scelerisque placerat ultrices. Proin
+                    purus ante, congue vel arcu ac, porta condimentum mauris.
+                    Maecenas massa orci, fringilla eget fermentum nec, dignissim
+                    nec diam.
+                </Accordion.Body>
+              </Accordion.Item>
+
+              <Accordion.Item eventKey="3">
+                <Accordion.Header>Nam elementum lobortis purus a maximus tortor</Accordion.Header>
+                <Accordion.Body className="accordion--bg">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam tincidunt arcu vel arcu fermentum, eget accumsan
+                    dolor dignissim. Nam eget quam semper, varius ligula sed,
+                    auctor augue. Maecenas et porta magna. Nulla mattis tortor
+                    vitae metus vestibulum scelerisque. Ut mollis a nisl vel
+                    suscipit. Curabitur scelerisque placerat ultrices. Proin
+                    purus ante, congue vel arcu ac, porta condimentum mauris.
+                    Maecenas massa orci, fringilla eget fermentum nec, dignissim
+                    nec diam.
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
 };
 
 export default Faq;

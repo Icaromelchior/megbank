@@ -3,11 +3,18 @@
 
 .footer{
   border-bottom: 0.2rem solid $color-secondary;
+  padding: 1.875rem;
 }
 
-.py-xs-5{
-  padding: 3rem;
+.logo{
+  margin-left: 50px;
+  margin-bottom: 30px;
   @media screen and (min-width:992px) {
-    padding: 0;
+    margin-left: 0;
+  margin-bottom: 0;
+    
   }
 }
+
+
+
