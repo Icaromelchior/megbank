@@ -4,7 +4,7 @@ import logo from '../essets/logo__magic-pay--mobile.png';
 import logoDesktop from '../essets/logo__magic-pay.png';
 import './Hero.scss'
 
-const Hero = ({ onClick }) => (
+const Hero = ({ handleCreateAcc}) => (
     <Card className="text-center text-light hero">
         <Row className="mt-lg-5">
             <Col lg className="text-lg-end my-lg-5">
@@ -14,7 +14,7 @@ const Hero = ({ onClick }) => (
 
             <Col lg className="text-lg-start my-5">
                 <p>Pague suas contas pelo nosso APP</p>
-                <Button variant="outline-light" onClick= {onClick}>Abra sua conta</Button>
+                <Button variant="outline-light" onClick={handleCreateAcc}>Abra sua conta</Button>
             </Col>
         </Row>
      </Card>
